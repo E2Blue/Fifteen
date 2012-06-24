@@ -1,7 +1,12 @@
 body {font-family: "Segoe UI",tahoma,helvetica;}
 
+h4 {margin: 0.5em 0;}
 
-#gameField {width:620px;height:620px;margin:20px auto;}
+.contrast {color:#1BA1E2;}
+.subtle {color:#999;}
+
+#gameField {width:620px;height:620px;margin:20px auto 0 auto;}
+#gameStatus {width:620px;margin:0 auto;}
 
 .square {width:150px;height:150px;background:#1BA1E2;border:1px solid white;float:left;position:relative;}
 .square.empty {background:none;}

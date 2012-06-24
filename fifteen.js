@@ -1,10 +1,12 @@
 $(document).ready(function(){
 	var emptySquare = $('#gameField .square.empty');
-	emptySquare.attr('data-index',0);
 
 	var randomValues = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];//.sort(Math.round(Math.random())-0.5);
 
 	var emptyIndex = parseInt(emptySquare.attr('data-index'));
+
+	var sequenceLength = 0;
+
 	for(var i = 1; i < 16;i++){
 		var value = randomValues.pop();
 		$('#gameField').append('<div class="square" data-index="'+i+'" data-value="'+value+'"><h3>'+value+'</h3></div>');
@@ -32,7 +34,9 @@ $(document).ready(function(){
 
 
 				toggleMoveClasses(emptyIndex);
-				//alert(winCheck($('#gameField .square')));
+			 	sequenceLength = winCheck($('#gameField .square'));
+				$('#gameStatus .sequenceLength-js').text(sequenceLength);
+				$('#gameStatus .sequenceRemaining-js').text(16 - sequenceLength);
 			}
 	});
 });
