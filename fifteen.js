@@ -2,12 +2,13 @@ $(document).ready(function(){
 
 	var fifteenGame = {
 		emptySquare: null,
-		randomValues: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+		values: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
 		emptyIndex: 0,
-		correctSequenceLenght: 0,
+		correctSequenceLength: 0,
 		init: function(){
-			for(var i = 1; i < 16;i++){
-				var value = this.randomValues.pop();
+			for(var i = 1; i < this.values.length;i++){
+				//var value = this.values.splice(baserat på random 0 - i,1);
+				var value = this.values.pop();
 				$('#gameField').append('<div class="square" data-index="'+i+'" data-value="'+value+'"><h3>'+value+'</h3></div>');
 			}
 			this.emptySquare = $('#gameField .square.empty');
