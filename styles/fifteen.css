@@ -17,7 +17,7 @@ h4 {margin: 0.5em 0;}
 /* arrow directions */
 #gameField>.square.over:hover>h3,.square.under:hover>h3,.square.left:hover>h3,.square.right:hover>h3{position:relative;background-position: center center;background-repeat:no-repeat;}
 
-#gameField>.square.over:hover>h3{height:100px;padding-bottom:152px;background-image:url('./arrow-over-normal.png');}
-#gameField>.square.under:hover>h3{height:100px;top:-152px;padding-top:202px;background-image:url('./arrow-under-normal.png');}
-#gameField>.square.left:hover>h3{width:150px;padding-right:152px;background-image:url('./arrow-left-normal.png');}
-#gameField>.square.right:hover>h3{width:151px;left:-151px;padding-left:150px;background-image:url('./arrow-right-normal.png');}
+#gameField>.square.over:hover>h3{height:100px;padding-bottom:152px;background-image:url('.././arrow-over-normal.png');}
+#gameField>.square.under:hover>h3{height:100px;top:-152px;padding-top:202px;background-image:url('.././arrow-under-normal.png');}
+#gameField>.square.left:hover>h3{width:150px;padding-right:152px;background-image:url('.././arrow-left-normal.png');}
+#gameField>.square.right:hover>h3{width:151px;left:-151px;padding-left:150px;background-image:url('.././arrow-right-normal.png');}
