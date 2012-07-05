@@ -6,8 +6,7 @@ var fifteenGame = {
 	correctSequenceLength: 0,
 	init: function(){
 		for(var i = this.values.length; i > 0;i--){
-			//var value = this.values.splice(baserat på random 0 - i,1);
-			var value = this.values.pop();
+			var value = this.values.splice(Math.floor(Math.random() * i),1);
 			$('#gameField').append('<div class="square" data-index="'+(16 -i)+'" data-value="'+value+'"><h3>'+value+'</h3></div>');
 		}
 		this.emptySquare = $('#gameField .square.empty');
