@@ -2,10 +2,16 @@
 @media (max-width: 480px) { .square {background:green;} }
  
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
+@media (min-width: 481px) and (max-width: 767px) {
+	#gameField {width:468px;height:468px;margin:20px auto 0 auto;}
+	#gameStatus {width:468px;}
+ 	.square {background:red;width:115px;height:115px;}
+ 	#gameField>.square>h3 {width:115px;}
+
+}
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) { .square{background:purple;} }
  
 /* Large desktop */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { }
