@@ -36,7 +36,7 @@ $(document).ready(function(){
 				toggleMoveClasses(emptyIndex);
 			 	sequenceLength = winCheck($('#gameField .square'));
 				$('#gameStatus .sequenceLength-js').text(sequenceLength);
-				$('#gameStatus .sequenceRemaining-js').text(16 - sequenceLength);
+				$('#gameStatus .sequenceRemaining-js').text(15 - sequenceLength);
 			}
 	});
 });
