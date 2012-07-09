@@ -11,7 +11,7 @@
 <h1>Games</h1>
 
 <div id="gameField">
-	<div class="square empty" data-value="16" data-index="0">
+	<div class="tile empty" data-value="16" data-index="0">
 	</div>
 </div>
 <div id="gameStatus">
@@ -25,7 +25,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#gameField').on('click','.square',fifteenGame.squareClick);
+		$('#gameField').on('click','.tile',fifteenGame.tileClick);
 		fifteenGame.init();
 	});
 </script>

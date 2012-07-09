@@ -1,17 +1,36 @@
 /* Landscape phones and down */
-@media (max-width: 480px) { .square {background:green;} }
+@media (max-width: 480px) { 
+	#gameField {width:468px;height:468px;margin:20px auto 0 auto;}
+	#gameStatus {width:468px;}
+ 	.tile {width:115px;height:115px;}
+ 	#gameField>.tile>h3 {width:115px;  padding-top:35px;}
+}
  
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
+
 	#gameField {width:468px;height:468px;margin:20px auto 0 auto;}
 	#gameStatus {width:468px;}
- 	.square {background:red;width:115px;height:115px;}
- 	#gameField>.square>h3 {width:115px;}
+ 	.tile {background:red;width:115px;height:115px;}
+ 	#gameField>.tile>h3 {width:115px;  padding-top:35px;}
 
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { .square{background:purple;} }
+@media (min-width: 768px) and (max-width: 979px) { .tile{background:purple;} }
  
 /* Large desktop */
 @media (min-width: 1200px) { }
+
+
+/* arrow directions - Only visible on desktop */
+@media (min-width: 768px){
+
+	#gameField>.tile.over:hover>h3,.tile.under:hover>h3,.tile.left:hover>h3,.tile.right:hover>h3{position:relative;background-position: center center;background-repeat:no-repeat;}
+
+	#gameField>.tile.over:hover>h3{height:100px;padding-bottom:152px;background-image:url('../images/arrow-over-normal.png');}
+	#gameField>.tile.under:hover>h3{height:100px;top:-152px;padding-top:202px;background-image:url('../images/arrow-under-normal.png');}
+	#gameField>.tile.left:hover>h3{width:150px;padding-right:152px;background-image:url('../images/arrow-left-normal.png');}
+	#gameField>.tile.right:hover>h3{width:151px;left:-151px;padding-left:150px;background-image:url('../images/arrow-right-normal.png');}
+
+}
