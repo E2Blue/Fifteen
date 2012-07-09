@@ -11,7 +11,7 @@ The wincheck function returns the sequence length for correctly placed tiles.
 Graphics are working for normal sizes. 
 
 /* ISSUES */
-There seems to be a glitch in firefox when hovering on the "under" tile.
+None. yeah...
 
 /* NOT IMPLEMENTED */
 Menus.

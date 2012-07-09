@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>Fifteen</title>
-	<link rel="stylesheet" type="text/css" href="./fifteen.css" />
+	<link rel="stylesheet" type="text/css" href="./styles/fifteen.css" />
+	<link rel="stylesheet" type="text/css" href="./styles/fifteen-responsive.css" />
 	<script type="text/javascript" src="./jquery-1.7.2-min.js"></script>
 	<script type="text/javascript" src="./fifteen.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 <div id="header">
 	<h1>Games</h1>
@@ -25,5 +27,11 @@
 	</h4>
 </div>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#gameField').on('click','.square',fifteenGame.squareClick);
+		fifteenGame.init();
+	});
+</script>
 </body>
 </html>
