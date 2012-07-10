@@ -52,7 +52,7 @@ var fifteenGame = {
 		 		$('#gameField').off('click','.tile',fifteenGame.tileClick);
 		 	}
 			$('#gameStatus .sequenceLength-js').text(fifteenGame.sequenceLength);
-			$('#gameStatus .sequenceRemaining-js').text(16 - fifteenGame.sequenceLength);
+			$('#gameStatus .sequenceRemaining-js').text(15 - fifteenGame.sequenceLength);
 		}
 	}
 };

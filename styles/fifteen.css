@@ -1,8 +1,15 @@
 body {font-family: "Segoe UI",tahoma,helvetica;}
 
-h4 {margin: 0.5em 0;}
+h1,h2,h3,h4 {margin:0.25em 0;}
+h1 {font-size:4em;}
+a {text-decoration:none;}
+.clear {clear:both;}
 
-.contrast {color:#1BA1E2;}
+/* header */
+#header h1 {float:left;}
+#header a {float:left; margin:0 10px;color:black;font-size:1.25em;margin-top: 62px;}
+
+.contrast,#header a.contrast {color:#1BA1E2;}
 .subtle {color:#999;}
 .tile.correct {background:silver;}
 
@@ -15,3 +22,12 @@ h4 {margin: 0.5em 0;}
 .tile.empty {background:none;}
 
 #gameField>.tile>h3 {margin:0px;padding:50px 0 0 0;height:100px;width:150px;color:white;font-size:2em;text-align:center;}
+
+/* arrow directions */
+#gameField>.square.over:hover>h3,.square.under:hover>h3,.square.left:hover>h3,.square.right:hover>h3{position:relative;background-position: center center;background-repeat:no-repeat;}
+
+#gameField>.square.over:hover>h3{height:100px;padding-bottom:152px;background-image:url('../images/arrow-over-normal.png');}
+#gameField>.square.under:hover>h3{height:100px;top:-152px;padding-top:202px;background-image:url('../images/arrow-under-normal.png');}
+#gameField>.square.left:hover>h3{width:150px;padding-right:152px;background-image:url('../images/arrow-left-normal.png');}
+#gameField>.square.right:hover>h3{width:151px;left:-151px;padding-left:150px;background-image:url('../images/arrow-right-normal.png');}
+
